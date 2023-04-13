@@ -1,0 +1,67 @@
+#picframe {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
+    top: 15vh;
+}
+
+.pic {
+    position: absolute;
+    transition: left 0.3s;
+    width: 1000px;
+    height: 650px;
+}
+
+#pic1 {
+    left: 0;
+    background-color: blue;
+}
+
+#pic2 {
+    left: 1000px;
+    background-color: green;
+}
+
+#pic3 {
+    left: 2000px;
+    background-color: orange;
+}
+
+#pic4 {
+    left: 3000px;
+    background-color: brown;
+}
+
+#nav {
+    position: absolute;
+    bottom: 1vh;
+    display: flex;
+}
+
+#leftArrow,
+#rightArrow {
+    z-index: 2;
+    font-size: 4vh;
+    padding: 0vh 1vw 0vh 1vw;
+    border-radius: 0.5vh;
+    user-select: none;
+    opacity: 60%;
+    margin: 0.5vw;
+}
+
+#selector {
+    width: fit-content;
+    margin-top: 1.5vh;
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    opacity: 60%;
+}
